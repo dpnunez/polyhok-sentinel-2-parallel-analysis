@@ -18,6 +18,8 @@ defmodule PolyhokSentinel2ParallelAnalysis.MixProject do
   end
 
   defp deps do
-    []
+    [
+      {:poly_hok, path: "/home/daniel/poly_hok"}
+    ]
   end
 end

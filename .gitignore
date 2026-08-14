@@ -12,3 +12,13 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+
+# Windows download metadata
+*:Zone.Identifier
+
+# Full local Sentinel-2 products
+/fixtures/sentinel-2/**/source/
+/fixtures/sentinel-2/**/imagery/*.jp2
+
+# Generated Sentinel-2 preparation outputs
+/fixtures/sentinel-2/**/prepared/

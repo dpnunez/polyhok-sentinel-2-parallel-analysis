@@ -168,51 +168,51 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| PREP-01 | P1: Preparar cena | Design | Pending |
-| PREP-02 | P1: Preparar cena | Design | Pending |
-| PREP-03 | P1: Preparar cena | Design | Pending |
-| PREP-04 | P1: Preparar cena | Design | Pending |
-| PREP-05 | P1: Preparar cena | Design | Pending |
-| PREP-06 | P1: Preparar cena | Design | Pending |
-| PREP-07 | P1: Preparar cena | Design | Pending |
-| PREP-08 | P1: Preparar cena | Design | Pending |
-| PREP-09 | P1: Preparar cena | Design | Pending |
-| PREP-10 | P1: Preparar cena | Design | Pending |
-| PREP-11 | P1: Preparar cena | Design | Pending |
-| PREP-12 | P1: Preparar cena | Design | Pending |
-| PREP-13 | P1: Preparar cena | Design | Pending |
-| PREP-14 | P1: Preparar cena | Design | Pending |
-| ORCH-01 | P1: Orquestrar | Design | Pending |
-| ORCH-02 | P1: Orquestrar | Design | Pending |
-| ORCH-03 | P1: Orquestrar | Design | Pending |
-| ORCH-04 | P1: Orquestrar | Design | Pending |
-| ORCH-05 | P1: Orquestrar | Design | Pending |
-| ORCH-06 | P1: Orquestrar | Design | Pending |
-| ORCH-07 | P1: Orquestrar | Design | Pending |
-| ORCH-08 | P1: Orquestrar | Design | Pending |
-| ORCH-09 | P1: Orquestrar | Design | Pending |
-| ORCH-10 | P1: Orquestrar | Design | Pending |
-| ORCH-11 | P1: Orquestrar | Design | Pending |
-| READ-01 | P1: Ler dados | Design | Pending |
-| READ-02 | P1: Ler dados | Design | Pending |
-| READ-03 | P1: Ler dados | Design | Pending |
-| READ-04 | P1: Ler dados | Design | Pending |
-| READ-05 | P1: Ler dados | Design | Pending |
-| SAFE-01 | P1: Recuperação segura | Design | Pending |
-| SAFE-02 | P1: Recuperação segura | Design | Pending |
-| SAFE-03 | P1: Recuperação segura | Design | Pending |
-| SAFE-04 | P1: Recuperação segura | Design | Pending |
-| SAFE-05 | P1: Recuperação segura | Design | Pending |
-| SAFE-06 | P1: Recuperação segura | Design | Pending |
-| SAFE-07 | P1: Recuperação segura | Design | Pending |
-| EDGE-01 | Edge cases | Design | Pending |
-| EDGE-02 | Edge cases | Design | Pending |
-| EDGE-03 | Edge cases | Design | Pending |
-| EDGE-04 | Edge cases | Design | Pending |
-| EDGE-05 | Edge cases | Design | Pending |
-| EDGE-06 | Edge cases | Design | Pending |
+| PREP-01 | P1: Preparar cena | T4 | Pending |
+| PREP-02 | P1: Preparar cena | T5 | Pending |
+| PREP-03 | P1: Preparar cena | T5 | Pending |
+| PREP-04 | P1: Preparar cena | T5 | Pending |
+| PREP-05 | P1: Preparar cena | T5 | Pending |
+| PREP-06 | P1: Preparar cena | T5 | Pending |
+| PREP-07 | P1: Preparar cena | T5 | Pending |
+| PREP-08 | P1: Preparar cena | T6 | Pending |
+| PREP-09 | P1: Preparar cena | T6 | Pending |
+| PREP-10 | P1: Preparar cena | T6 | Pending |
+| PREP-11 | P1: Preparar cena | T6 | Pending |
+| PREP-12 | P1: Preparar cena | T7 | Pending |
+| PREP-13 | P1: Preparar cena | T5 | Pending |
+| PREP-14 | P1: Preparar cena | T8 | Pending |
+| ORCH-01 | P1: Orquestrar | T12 | Pending |
+| ORCH-02 | P1: Orquestrar | T13 | Pending |
+| ORCH-03 | P1: Orquestrar | T12 | Pending |
+| ORCH-04 | P1: Orquestrar | T12 | Pending |
+| ORCH-05 | P1: Orquestrar | T10 | Pending |
+| ORCH-06 | P1: Orquestrar | T10 | Pending |
+| ORCH-07 | P1: Orquestrar | T13 | Pending |
+| ORCH-08 | P1: Orquestrar | T12 | Pending |
+| ORCH-09 | P1: Orquestrar | T9 | Pending |
+| ORCH-10 | P1: Orquestrar | T12 | Pending |
+| ORCH-11 | P1: Orquestrar | T13 | Pending |
+| READ-01 | P1: Ler dados | T11 | Pending |
+| READ-02 | P1: Ler dados | T11 | Pending |
+| READ-03 | P1: Ler dados | T11 | Pending |
+| READ-04 | P1: Ler dados | T11 | Pending |
+| READ-05 | P1: Ler dados | T11 | Pending |
+| SAFE-01 | P1: Recuperação segura | T7 | Pending |
+| SAFE-02 | P1: Recuperação segura | T7 | Pending |
+| SAFE-03 | P1: Recuperação segura | T7 | Pending |
+| SAFE-04 | P1: Recuperação segura | T7 | Pending |
+| SAFE-05 | P1: Recuperação segura | T7 | Pending |
+| SAFE-06 | P1: Recuperação segura | T13 | Pending |
+| SAFE-07 | P1: Recuperação segura | T3 | Pending |
+| EDGE-01 | Edge cases | T4 | Pending |
+| EDGE-02 | Edge cases | T4 | Pending |
+| EDGE-03 | Edge cases | T12 | Pending |
+| EDGE-04 | Edge cases | T7 | Pending |
+| EDGE-05 | Edge cases | T10 | Pending |
+| EDGE-06 | Edge cases | T12 | Pending |
 
-**Coverage:** 43 total, 0 mapped to tasks, 43 unmapped.
+**Coverage:** 43 total, 43 mapped to tasks, 0 unmapped.
 
 ---
 

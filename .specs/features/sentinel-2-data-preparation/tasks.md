@@ -159,13 +159,13 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Width, height, CRS, transform, pixel size, origin and bounds must all match.
-- [ ] Offsets equal `floor((tile - crop) / 2)` for 1024, 4096 and 8192.
-- [ ] Both bands use the same Rasterio window and exact metadata conversion values.
-- [ ] Any NODATA/SATURATED in either band produces NaN in both outputs.
-- [ ] No resampling, reprojection, clipping or NDVI operation exists.
-- [ ] Undersized or misaligned inputs fail without prepared output.
-- [ ] Quick gate passes with at least 10 raster cases and no skipped tests.
+- [x] Width, height, CRS, transform, pixel size, origin and bounds must all match.
+- [x] Offsets equal `floor((tile - crop) / 2)` for 1024, 4096 and 8192.
+- [x] Both bands use the same Rasterio window and exact metadata conversion values.
+- [x] Any NODATA/SATURATED in either band produces NaN in both outputs.
+- [x] No resampling, reprojection, clipping or NDVI operation exists.
+- [x] Undersized or misaligned inputs fail without prepared output.
+- [x] Quick gate passes with at least 10 raster cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: quick

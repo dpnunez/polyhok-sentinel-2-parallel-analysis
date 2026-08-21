@@ -169,18 +169,18 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
 | PREP-01 | P1: Preparar cena | T4 | Implemented |
-| PREP-02 | P1: Preparar cena | T5 | Pending |
-| PREP-03 | P1: Preparar cena | T5 | Pending |
-| PREP-04 | P1: Preparar cena | T5 | Pending |
-| PREP-05 | P1: Preparar cena | T5 | Pending |
-| PREP-06 | P1: Preparar cena | T5 | Pending |
-| PREP-07 | P1: Preparar cena | T5 | Pending |
+| PREP-02 | P1: Preparar cena | T5 | Implemented |
+| PREP-03 | P1: Preparar cena | T5 | Implemented |
+| PREP-04 | P1: Preparar cena | T5 | Implemented |
+| PREP-05 | P1: Preparar cena | T5 | Implemented |
+| PREP-06 | P1: Preparar cena | T5 | Implemented |
+| PREP-07 | P1: Preparar cena | T5 | Implemented |
 | PREP-08 | P1: Preparar cena | T6 | Pending |
 | PREP-09 | P1: Preparar cena | T6 | Pending |
 | PREP-10 | P1: Preparar cena | T6 | Pending |
 | PREP-11 | P1: Preparar cena | T6 | Pending |
 | PREP-12 | P1: Preparar cena | T7 | Pending |
-| PREP-13 | P1: Preparar cena | T5 | Pending |
+| PREP-13 | P1: Preparar cena | T5 | Implemented |
 | PREP-14 | P1: Preparar cena | T8 | Pending |
 | ORCH-01 | P1: Orquestrar | T12 | Pending |
 | ORCH-02 | P1: Orquestrar | T13 | Pending |

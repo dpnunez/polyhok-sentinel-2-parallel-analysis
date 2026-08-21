@@ -1,6 +1,7 @@
 defmodule PolyHokTest do
   use ExUnit.Case, async: false
 
+  @tag :gpu
   test "moves an Nx tensor to the GPU and back" do
     tensor = Nx.tensor([[1, 2, 3, 4]], type: {:s, 32})
 

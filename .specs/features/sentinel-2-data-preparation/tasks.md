@@ -86,10 +86,10 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] `mix test` omits only the tagged GPU case and all CPU cases pass.
-- [ ] `mix test --include gpu test/poly_hok_test.exs` still selects the original case.
-- [ ] No assertion in the CUDA test is changed or removed.
-- [ ] Full gate passes with at least 2 CPU tests and 0 failures.
+- [x] `mix test` omits only the tagged GPU case and all CPU cases pass.
+- [x] `mix test --include gpu test/poly_hok_test.exs` still selects the original case.
+- [x] No assertion in the CUDA test is changed or removed.
+- [x] Full gate passes with at least 2 CPU tests and 0 failures.
 
 **Tests**: unit
 **Gate**: full

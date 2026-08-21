@@ -1,0 +1,35 @@
+{
+  "boa_offset_b04": -1000.0,
+  "boa_offset_b08": -1000.0,
+  "boa_quantification_value": 10000.0,
+  "byte_order": "little-endian",
+  "checksum_b04_prepared": "d7c14ca2c5c4195d88204d0b9eca2e6183087e866d8a3799e818739fbc57f08c",
+  "checksum_b08_prepared": "c8d70987a01245c6c8862db6c31f8c2a430e964488414c79e20fe932f28c4c91",
+  "column_offset": 4978,
+  "crs": "EPSG:32722",
+  "data_type": "float32",
+  "height": 1024,
+  "memory_order": "row-major",
+  "metadata_path": "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/1024x1024/metadata.json",
+  "origin": [
+    300000.0,
+    6500020.0
+  ],
+  "path_b04": "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/1024x1024/b04.f32",
+  "path_b08": "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/1024x1024/b08.f32",
+  "pixel_size": [
+    10.0,
+    -10.0
+  ],
+  "preview_path": "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/1024x1024/preview.png",
+  "product_id": "S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341",
+  "row_offset": 4978,
+  "sensing_time_utc": "2024-07-25T13:41:22.263969Z",
+  "size_class": "small",
+  "source_b04": "fixtures/sentinel-2/scenes/S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341/source/S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341.SAFE/GRANULE/L2A_T22HCK_A038574_20240725T134035/IMG_DATA/R10m/T22HCK_20240725T133149_B04_10m.jp2",
+  "source_b08": "fixtures/sentinel-2/scenes/S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341/source/S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341.SAFE/GRANULE/L2A_T22HCK_A038574_20240725T134035/IMG_DATA/R10m/T22HCK_20240725T133149_B08_10m.jp2",
+  "source_nodata_value": 0,
+  "source_saturated_value": 65535,
+  "tile_id": "T22HCK",
+  "width": 1024
+}

@@ -218,9 +218,9 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 
 ## Success Criteria
 
-- [ ] Uma execução válida produz exatamente três recortes e seis binários conformes ao contrato documentado.
-- [ ] Nenhum cenário de status Python não zero, timeout, arquivo ausente, tamanho incorreto ou checksum divergente retorna `{:ok, prepared_scene}`.
-- [ ] Um teste cruzado escreve valores com Python e comprova no Elixir os mesmos valores, forma e posições `NaN`.
-- [ ] Uma interrupção não deixa uma cena observável como preparada.
-- [ ] Uma segunda execução com artefatos válidos não modifica os seis arquivos `.f32`.
-- [ ] Testes Python e Elixir podem ser executados sem GPU e sem depender do produto Sentinel-2 real ignorado pelo Git.
+- [x] Uma execução válida produz exatamente três recortes e seis binários conformes ao contrato documentado.
+- [x] Nenhum cenário de status Python não zero, timeout, arquivo ausente, tamanho incorreto ou checksum divergente retorna `{:ok, prepared_scene}`.
+- [x] Um teste cruzado escreve valores com Python e comprova no Elixir os mesmos valores, forma e posições `NaN`.
+- [x] Uma interrupção não deixa uma cena observável como preparada.
+- [x] Uma segunda execução com artefatos válidos não modifica os seis arquivos `.f32`.
+- [x] Testes Python e Elixir podem ser executados sem GPU e sem depender do produto Sentinel-2 real ignorado pelo Git.

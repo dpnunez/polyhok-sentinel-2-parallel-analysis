@@ -415,11 +415,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] A new contributor can install Python dependencies and run both CPU suites from documented commands.
-- [ ] CLI arguments, output layout, Elixir API results and regeneration rules are documented.
-- [ ] GPU test remains documented as explicit opt-in.
-- [ ] `.notebook/INDEX.md` points to a concise preparation-flow note.
-- [ ] Build gate passes with all CPU tests and no skipped tests.
+- [x] A new contributor can install Python dependencies and run both CPU suites from documented commands.
+- [x] CLI arguments, output layout, Elixir API results and regeneration rules are documented.
+- [x] GPU test remains documented as explicit opt-in.
+- [x] `.notebook/INDEX.md` points to a concise preparation-flow note.
+- [x] Build gate passes with all CPU tests and no skipped tests.
 
 **Tests**: none, matrix marks documentation as build-only
 **Gate**: build

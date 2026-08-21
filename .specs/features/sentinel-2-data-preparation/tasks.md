@@ -135,10 +135,10 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] One controlled `.SAFE` resolves exactly one product/tile and correct B04/B08/XML paths.
-- [ ] Offsets, quantification, NODATA and SATURATED are read from XML, never hardcoded.
-- [ ] Missing, duplicate or invalid required values fail before raster conversion.
-- [ ] Quick gate passes with at least 8 metadata cases and no skipped tests.
+- [x] One controlled `.SAFE` resolves exactly one product/tile and correct B04/B08/XML paths.
+- [x] Offsets, quantification, NODATA and SATURATED are read from XML, never hardcoded.
+- [x] Missing, duplicate or invalid required values fail before raster conversion.
+- [x] Quick gate passes with at least 8 metadata cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: quick

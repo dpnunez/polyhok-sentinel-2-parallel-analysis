@@ -168,7 +168,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| PREP-01 | P1: Preparar cena | T4 | Pending |
+| PREP-01 | P1: Preparar cena | T4 | Implemented |
 | PREP-02 | P1: Preparar cena | T5 | Pending |
 | PREP-03 | P1: Preparar cena | T5 | Pending |
 | PREP-04 | P1: Preparar cena | T5 | Pending |
@@ -205,8 +205,8 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | SAFE-05 | P1: Recuperação segura | T7 | Pending |
 | SAFE-06 | P1: Recuperação segura | T13 | Pending |
 | SAFE-07 | P1: Recuperação segura | T3 | Implemented |
-| EDGE-01 | Edge cases | T4 | Pending |
-| EDGE-02 | Edge cases | T4 | Pending |
+| EDGE-01 | Edge cases | T4 | Implemented |
+| EDGE-02 | Edge cases | T4 | Implemented |
 | EDGE-03 | Edge cases | T12 | Pending |
 | EDGE-04 | Edge cases | T7 | Pending |
 | EDGE-05 | Edge cases | T10 | Pending |

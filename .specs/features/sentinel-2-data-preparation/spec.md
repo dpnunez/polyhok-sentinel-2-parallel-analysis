@@ -182,16 +182,16 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | PREP-12 | P1: Preparar cena | T7 | Implemented |
 | PREP-13 | P1: Preparar cena | T5 | Implemented |
 | PREP-14 | P1: Preparar cena | T8 | Implemented |
-| ORCH-01 | P1: Orquestrar | T12 | Pending |
+| ORCH-01 | P1: Orquestrar | T12 | Implemented |
 | ORCH-02 | P1: Orquestrar | T13 | Pending |
-| ORCH-03 | P1: Orquestrar | T12 | Pending |
-| ORCH-04 | P1: Orquestrar | T12 | Pending |
+| ORCH-03 | P1: Orquestrar | T12 | Implemented |
+| ORCH-04 | P1: Orquestrar | T12 | Implemented |
 | ORCH-05 | P1: Orquestrar | T10 | Implemented |
 | ORCH-06 | P1: Orquestrar | T10 | Implemented |
 | ORCH-07 | P1: Orquestrar | T13 | Pending |
-| ORCH-08 | P1: Orquestrar | T12 | Pending |
+| ORCH-08 | P1: Orquestrar | T12 | Implemented |
 | ORCH-09 | P1: Orquestrar | T9 | Implemented |
-| ORCH-10 | P1: Orquestrar | T12 | Pending |
+| ORCH-10 | P1: Orquestrar | T12 | Implemented |
 | ORCH-11 | P1: Orquestrar | T13 | Pending |
 | READ-01 | P1: Ler dados | T11 | Implemented |
 | READ-02 | P1: Ler dados | T11 | Implemented |
@@ -207,10 +207,10 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | SAFE-07 | P1: Recuperação segura | T3 | Implemented |
 | EDGE-01 | Edge cases | T4 | Implemented |
 | EDGE-02 | Edge cases | T4 | Implemented |
-| EDGE-03 | Edge cases | T12 | Pending |
+| EDGE-03 | Edge cases | T12 | Implemented |
 | EDGE-04 | Edge cases | T7 | Implemented |
 | EDGE-05 | Edge cases | T10 | Implemented |
-| EDGE-06 | Edge cases | T12 | Pending |
+| EDGE-06 | Edge cases | T12 | Implemented |
 
 **Coverage:** 43 total, 43 mapped to tasks, 0 unmapped.
 

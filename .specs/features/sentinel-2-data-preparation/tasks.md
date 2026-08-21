@@ -337,12 +337,12 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Executable and entrypoint are checked and passed with separate `:args`; no shell interpolation exists.
-- [ ] Worker decides only after `{:exit_status, status}` and validates artifacts only for status 0.
-- [ ] Nonzero status, missing executable and timeout return the exact documented error class.
-- [ ] Timeout closes the Port, remains an error despite late output and never trusts output without validation.
-- [ ] One terminal log includes scene ID, duration, result and bounded diagnostic without matrix bytes.
-- [ ] Full gate passes with at least 8 controlled-process cases and no skipped tests.
+- [x] Executable and entrypoint are checked and passed with separate `:args`; no shell interpolation exists.
+- [x] Worker decides only after `{:exit_status, status}` and validates artifacts only for status 0.
+- [x] Nonzero status, missing executable and timeout return the exact documented error class.
+- [x] Timeout closes the Port, remains an error despite late output and never trusts output without validation.
+- [x] One terminal log includes scene ID, duration, result and bounded diagnostic without matrix bytes.
+- [x] Full gate passes with at least 8 controlled-process cases and no skipped tests.
 
 **Tests**: integration
 **Gate**: full

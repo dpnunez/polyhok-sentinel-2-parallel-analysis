@@ -186,11 +186,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Each binary is row-major IEEE 754 `<f4`, headerless and exactly `width * height * 4` bytes.
-- [ ] Every metadata field from section 7.2 exists with project-relative paths and matching checksums.
-- [ ] Preview places B04 left/B08 right, uses independent finite p2/p98, black NaN and maximum 2048x1024.
-- [ ] Reread checks size, dtype, shape, order and checksum before returning success.
-- [ ] Quick gate passes with at least 8 artifact cases and no skipped tests.
+- [x] Each binary is row-major IEEE 754 `<f4`, headerless and exactly `width * height * 4` bytes.
+- [x] Every metadata field from section 7.2 exists with project-relative paths and matching checksums.
+- [x] Preview places B04 left/B08 right, uses independent finite p2/p98, black NaN and maximum 2048x1024.
+- [x] Reread checks size, dtype, shape, order and checksum before returning success.
+- [x] Quick gate passes with at least 8 artifact cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: quick

@@ -175,10 +175,10 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | PREP-05 | P1: Preparar cena | T5 | Implemented |
 | PREP-06 | P1: Preparar cena | T5 | Implemented |
 | PREP-07 | P1: Preparar cena | T5 | Implemented |
-| PREP-08 | P1: Preparar cena | T6 | Pending |
-| PREP-09 | P1: Preparar cena | T6 | Pending |
-| PREP-10 | P1: Preparar cena | T6 | Pending |
-| PREP-11 | P1: Preparar cena | T6 | Pending |
+| PREP-08 | P1: Preparar cena | T6 | Implemented |
+| PREP-09 | P1: Preparar cena | T6 | Implemented |
+| PREP-10 | P1: Preparar cena | T6 | Implemented |
+| PREP-11 | P1: Preparar cena | T6 | Implemented |
 | PREP-12 | P1: Preparar cena | T7 | Pending |
 | PREP-13 | P1: Preparar cena | T5 | Implemented |
 | PREP-14 | P1: Preparar cena | T8 | Pending |

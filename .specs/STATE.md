@@ -21,10 +21,10 @@
 ## Handoff
 
 - **Feature**: sentinel-2-data-preparation
-- **Phase / Task**: planejamento concluído; execução aguardando confirmação
-- **Completed**: especificação validada, design e tarefas preparados
+- **Phase / Task**: execução e verificação concluídas
+- **Completed**: T1-T15, correções ORCH-10/SAFE-07 e validação independente PASS
 - **In-progress** (file:line): none
-- **Next step**: confirmar `tasks.md` e escolher execução inline ou em dois lotes sequenciais de subagentes.
-- **Blockers**: aprovação do plano executável e da estratégia de subagentes
-- **Uncommitted files**: none after the planning commit
+- **Next step**: integrar ou revisar a feature conforme o fluxo do projeto
+- **Blockers**: none
+- **Uncommitted files**: none after the validation commit
 - **Branch**: feat/prepare-data-pipe

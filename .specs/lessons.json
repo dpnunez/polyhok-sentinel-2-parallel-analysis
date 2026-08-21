@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 3,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "ac_gap::assert every required terminal outcome for observability contracts not only one representative result",
+      "text": "Assert every required terminal outcome for observability contracts, not only one representative result",
+      "signal": "ac_gap",
+      "scope": "sentinel-2/orchestration",
+      "status": "candidate",
+      "features": [
+        "sentinel-2-data-preparation"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        ".specs/features/sentinel-2-data-preparation/validation.md:44 (sentinel-2/orchestration)"
+      ],
+      "created": "2026-08-21T00:53:24Z",
+      "last_seen": "2026-08-21T00:53:24Z"
+    },
+    {
+      "id": "L-002",
+      "key": "ac_gap::test every required repository ignore and tracking rule as an executable contract",
+      "text": "Test every required repository ignore and tracking rule as an executable contract",
+      "signal": "ac_gap",
+      "scope": "repository/configuration",
+      "status": "candidate",
+      "features": [
+        "sentinel-2-data-preparation"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        ".specs/features/sentinel-2-data-preparation/validation.md:57 (repository/configuration)"
+      ],
+      "created": "2026-08-21T00:53:25Z",
+      "last_seen": "2026-08-21T00:53:25Z"
+    }
+  ]
+}

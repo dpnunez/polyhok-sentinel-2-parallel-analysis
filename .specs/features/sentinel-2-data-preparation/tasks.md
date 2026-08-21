@@ -7,7 +7,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 **If the skill cannot be activated, STOP and tell the user.**
 
 **Design**: `.specs/features/sentinel-2-data-preparation/design.md`
-**Status**: In Progress
+**Status**: Complete
 
 ## Test Coverage Matrix
 

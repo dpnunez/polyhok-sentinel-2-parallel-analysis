@@ -168,49 +168,49 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| PREP-01 | P1: Preparar cena | T4 | Implemented |
-| PREP-02 | P1: Preparar cena | T5 | Implemented |
-| PREP-03 | P1: Preparar cena | T5 | Implemented |
-| PREP-04 | P1: Preparar cena | T5 | Implemented |
-| PREP-05 | P1: Preparar cena | T5 | Implemented |
-| PREP-06 | P1: Preparar cena | T5 | Implemented |
-| PREP-07 | P1: Preparar cena | T5 | Implemented |
-| PREP-08 | P1: Preparar cena | T6 | Implemented |
-| PREP-09 | P1: Preparar cena | T6 | Implemented |
-| PREP-10 | P1: Preparar cena | T6 | Implemented |
-| PREP-11 | P1: Preparar cena | T6 | Implemented |
-| PREP-12 | P1: Preparar cena | T7 | Implemented |
-| PREP-13 | P1: Preparar cena | T5 | Implemented |
-| PREP-14 | P1: Preparar cena | T8 | Implemented |
-| ORCH-01 | P1: Orquestrar | T12 | Implemented |
-| ORCH-02 | P1: Orquestrar | T13 | Implemented |
-| ORCH-03 | P1: Orquestrar | T12 | Implemented |
-| ORCH-04 | P1: Orquestrar | T12 | Implemented |
-| ORCH-05 | P1: Orquestrar | T10 | Implemented |
-| ORCH-06 | P1: Orquestrar | T10 | Implemented |
-| ORCH-07 | P1: Orquestrar | T13 | Implemented |
-| ORCH-08 | P1: Orquestrar | T12 | Implemented |
-| ORCH-09 | P1: Orquestrar | T9 | Implemented |
-| ORCH-10 | P1: Orquestrar | T12 | Implemented |
-| ORCH-11 | P1: Orquestrar | T13 | Implemented |
-| READ-01 | P1: Ler dados | T11 | Implemented |
-| READ-02 | P1: Ler dados | T11 | Implemented |
-| READ-03 | P1: Ler dados | T11 | Implemented |
-| READ-04 | P1: Ler dados | T11 | Implemented |
-| READ-05 | P1: Ler dados | T11 | Implemented |
-| SAFE-01 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-02 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-03 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-04 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-05 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-06 | P1: Recuperação segura | T13 | Implemented |
-| SAFE-07 | P1: Recuperação segura | T3 | Implemented |
-| EDGE-01 | Edge cases | T4 | Implemented |
-| EDGE-02 | Edge cases | T4 | Implemented |
-| EDGE-03 | Edge cases | T12 | Implemented |
-| EDGE-04 | Edge cases | T7 | Implemented |
-| EDGE-05 | Edge cases | T10 | Implemented |
-| EDGE-06 | Edge cases | T12 | Implemented |
+| PREP-01 | P1: Preparar cena | T4 | ✅ Verified |
+| PREP-02 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-03 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-04 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-05 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-06 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-07 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-08 | P1: Preparar cena | T6 | ✅ Verified |
+| PREP-09 | P1: Preparar cena | T6 | ✅ Verified |
+| PREP-10 | P1: Preparar cena | T6 | ✅ Verified |
+| PREP-11 | P1: Preparar cena | T6 | ✅ Verified |
+| PREP-12 | P1: Preparar cena | T7 | ✅ Verified |
+| PREP-13 | P1: Preparar cena | T5 | ✅ Verified |
+| PREP-14 | P1: Preparar cena | T8 | ✅ Verified |
+| ORCH-01 | P1: Orquestrar | T12 | ✅ Verified |
+| ORCH-02 | P1: Orquestrar | T13 | ✅ Verified |
+| ORCH-03 | P1: Orquestrar | T12 | ✅ Verified |
+| ORCH-04 | P1: Orquestrar | T12 | ✅ Verified |
+| ORCH-05 | P1: Orquestrar | T10 | ✅ Verified |
+| ORCH-06 | P1: Orquestrar | T10 | ✅ Verified |
+| ORCH-07 | P1: Orquestrar | T13 | ✅ Verified |
+| ORCH-08 | P1: Orquestrar | T12 | ✅ Verified |
+| ORCH-09 | P1: Orquestrar | T9 | ✅ Verified |
+| ORCH-10 | P1: Orquestrar | T12 | ✅ Verified |
+| ORCH-11 | P1: Orquestrar | T13 | ✅ Verified |
+| READ-01 | P1: Ler dados | T11 | ✅ Verified |
+| READ-02 | P1: Ler dados | T11 | ✅ Verified |
+| READ-03 | P1: Ler dados | T11 | ✅ Verified |
+| READ-04 | P1: Ler dados | T11 | ✅ Verified |
+| READ-05 | P1: Ler dados | T11 | ✅ Verified |
+| SAFE-01 | P1: Recuperação segura | T7 | ✅ Verified |
+| SAFE-02 | P1: Recuperação segura | T7 | ✅ Verified |
+| SAFE-03 | P1: Recuperação segura | T7 | ✅ Verified |
+| SAFE-04 | P1: Recuperação segura | T7 | ✅ Verified |
+| SAFE-05 | P1: Recuperação segura | T7 | ✅ Verified |
+| SAFE-06 | P1: Recuperação segura | T13 | ✅ Verified |
+| SAFE-07 | P1: Recuperação segura | T3 | ✅ Verified |
+| EDGE-01 | Edge cases | T4 | ✅ Verified |
+| EDGE-02 | Edge cases | T4 | ✅ Verified |
+| EDGE-03 | Edge cases | T12 | ✅ Verified |
+| EDGE-04 | Edge cases | T7 | ✅ Verified |
+| EDGE-05 | Edge cases | T10 | ✅ Verified |
+| EDGE-06 | Edge cases | T12 | ✅ Verified |
 
 **Coverage:** 43 total, 43 mapped to tasks, 0 unmapped.
 

@@ -6,10 +6,10 @@ O projeto precisa transformar produtos Sentinel-2 L2A em matrizes binárias repr
 
 ## Goals
 
-- [ ] Preparar B04 e B08 nos três tamanhos definidos em `docs/sentinel-2-data-preparation.md`.
-- [ ] Disponibilizar uma API Elixir que aguarde a preparação e retorne um resultado explícito de sucesso ou erro.
-- [ ] Comprovar que o Elixir consegue validar e ler os artefatos preparados sem transportar matrizes pelo Port.
-- [ ] Tornar a preparação segura para repetição, interrupção e falha parcial.
+- [x] Preparar B04 e B08 nos três tamanhos definidos em `docs/sentinel-2-data-preparation.md`.
+- [x] Disponibilizar uma API Elixir que aguarde a preparação e retorne um resultado explícito de sucesso ou erro.
+- [x] Comprovar que o Elixir consegue validar e ler os artefatos preparados sem transportar matrizes pelo Port.
+- [x] Tornar a preparação segura para repetição, interrupção e falha parcial.
 
 ## Out of Scope
 

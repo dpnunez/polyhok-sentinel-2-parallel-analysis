@@ -390,11 +390,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Python writes controlled finite values and NaNs that Elixir reads with exact type, shape, values and invalid positions.
-- [ ] Controlled executable cases prove nonzero, timeout, status-zero-invalid-artifacts and success-plus-valid-artifacts.
-- [ ] Interruption leaves no prepared manifest entry; rerun of valid output preserves all six binary mtimes.
-- [ ] Concurrent same-scene calls prove one active request and one `:already_running` result.
-- [ ] Full gate passes with at least 4 cross-boundary cases and no skipped tests.
+- [x] Python writes controlled finite values and NaNs that Elixir reads with exact type, shape, values and invalid positions.
+- [x] Controlled executable cases prove nonzero, timeout, status-zero-invalid-artifacts and success-plus-valid-artifacts.
+- [x] Interruption leaves no prepared manifest entry; rerun of valid output preserves all six binary mtimes.
+- [x] Concurrent same-scene calls prove one active request and one `:already_running` result.
+- [x] Full gate passes with at least 4 cross-boundary cases and no skipped tests.
 
 **Tests**: integration
 **Gate**: full

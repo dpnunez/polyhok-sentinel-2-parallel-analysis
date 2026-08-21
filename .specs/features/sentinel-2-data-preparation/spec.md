@@ -183,16 +183,16 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | PREP-13 | P1: Preparar cena | T5 | Implemented |
 | PREP-14 | P1: Preparar cena | T8 | Implemented |
 | ORCH-01 | P1: Orquestrar | T12 | Implemented |
-| ORCH-02 | P1: Orquestrar | T13 | Pending |
+| ORCH-02 | P1: Orquestrar | T13 | Implemented |
 | ORCH-03 | P1: Orquestrar | T12 | Implemented |
 | ORCH-04 | P1: Orquestrar | T12 | Implemented |
 | ORCH-05 | P1: Orquestrar | T10 | Implemented |
 | ORCH-06 | P1: Orquestrar | T10 | Implemented |
-| ORCH-07 | P1: Orquestrar | T13 | Pending |
+| ORCH-07 | P1: Orquestrar | T13 | Implemented |
 | ORCH-08 | P1: Orquestrar | T12 | Implemented |
 | ORCH-09 | P1: Orquestrar | T9 | Implemented |
 | ORCH-10 | P1: Orquestrar | T12 | Implemented |
-| ORCH-11 | P1: Orquestrar | T13 | Pending |
+| ORCH-11 | P1: Orquestrar | T13 | Implemented |
 | READ-01 | P1: Ler dados | T11 | Implemented |
 | READ-02 | P1: Ler dados | T11 | Implemented |
 | READ-03 | P1: Ler dados | T11 | Implemented |
@@ -203,7 +203,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | SAFE-03 | P1: Recuperação segura | T7 | Implemented |
 | SAFE-04 | P1: Recuperação segura | T7 | Implemented |
 | SAFE-05 | P1: Recuperação segura | T7 | Implemented |
-| SAFE-06 | P1: Recuperação segura | T13 | Pending |
+| SAFE-06 | P1: Recuperação segura | T13 | Implemented |
 | SAFE-07 | P1: Recuperação segura | T3 | Implemented |
 | EDGE-01 | Edge cases | T4 | Implemented |
 | EDGE-02 | Edge cases | T4 | Implemented |

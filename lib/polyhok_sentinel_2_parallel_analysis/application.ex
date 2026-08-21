@@ -7,8 +7,7 @@ defmodule PolyhokSentinel2ParallelAnalysis.Application do
   def start(_type, _args) do
     children = [
       {Registry,
-       keys: :unique,
-       name: PolyhokSentinel2ParallelAnalysis.Sentinel2.PreparationRegistry},
+       keys: :unique, name: PolyhokSentinel2ParallelAnalysis.Sentinel2.PreparationRegistry},
       {DynamicSupervisor,
        strategy: :one_for_one,
        name: PolyhokSentinel2ParallelAnalysis.Sentinel2.PreparationSupervisor}

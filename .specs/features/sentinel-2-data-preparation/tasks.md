@@ -363,11 +363,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Public return values are only `{:ok, prepared_scene}` or `{:error, reason}`.
-- [ ] Caller waits through message receive while unrelated BEAM processes continue running.
-- [ ] A second active request for the same scene returns `{:error, :already_running}`.
-- [ ] Different workers terminate after success, failure or timeout and release Registry names.
-- [ ] Build gate passes with at least 5 API/concurrency cases and no skipped tests.
+- [x] Public return values are only `{:ok, prepared_scene}` or `{:error, reason}`.
+- [x] Caller waits through message receive while unrelated BEAM processes continue running.
+- [x] A second active request for the same scene returns `{:error, :already_running}`.
+- [x] Different workers terminate after success, failure or timeout and release Registry names.
+- [x] Build gate passes with at least 5 API/concurrency cases and no skipped tests.
 
 **Tests**: integration
 **Gate**: build

@@ -211,12 +211,12 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] New files use `.partial` in the destination filesystem and are atomically renamed only after validation.
-- [ ] `manifest.json` is replaced atomically after all three crops validate.
-- [ ] Failed writes never create a prepared manifest entry; readers can ignore orphan/temporary files.
-- [ ] Valid existing source, metadata, sizes and checksums return success without changing six binary mtimes.
-- [ ] Changed source identity or checksum forces regeneration.
-- [ ] Quick gate passes with at least 8 transaction/reuse cases and no skipped tests.
+- [x] New files use `.partial` in the destination filesystem and are atomically renamed only after validation.
+- [x] `manifest.json` is replaced atomically after all three crops validate.
+- [x] Failed writes never create a prepared manifest entry; readers can ignore orphan/temporary files.
+- [x] Valid existing source, metadata, sizes and checksums return success without changing six binary mtimes.
+- [x] Changed source identity or checksum forces regeneration.
+- [x] Quick gate passes with at least 8 transaction/reuse cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: quick

@@ -179,7 +179,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | PREP-09 | P1: Preparar cena | T6 | Implemented |
 | PREP-10 | P1: Preparar cena | T6 | Implemented |
 | PREP-11 | P1: Preparar cena | T6 | Implemented |
-| PREP-12 | P1: Preparar cena | T7 | Pending |
+| PREP-12 | P1: Preparar cena | T7 | Implemented |
 | PREP-13 | P1: Preparar cena | T5 | Implemented |
 | PREP-14 | P1: Preparar cena | T8 | Pending |
 | ORCH-01 | P1: Orquestrar | T12 | Pending |
@@ -198,17 +198,17 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | READ-03 | P1: Ler dados | T11 | Pending |
 | READ-04 | P1: Ler dados | T11 | Pending |
 | READ-05 | P1: Ler dados | T11 | Pending |
-| SAFE-01 | P1: Recuperação segura | T7 | Pending |
-| SAFE-02 | P1: Recuperação segura | T7 | Pending |
-| SAFE-03 | P1: Recuperação segura | T7 | Pending |
-| SAFE-04 | P1: Recuperação segura | T7 | Pending |
-| SAFE-05 | P1: Recuperação segura | T7 | Pending |
+| SAFE-01 | P1: Recuperação segura | T7 | Implemented |
+| SAFE-02 | P1: Recuperação segura | T7 | Implemented |
+| SAFE-03 | P1: Recuperação segura | T7 | Implemented |
+| SAFE-04 | P1: Recuperação segura | T7 | Implemented |
+| SAFE-05 | P1: Recuperação segura | T7 | Implemented |
 | SAFE-06 | P1: Recuperação segura | T13 | Pending |
 | SAFE-07 | P1: Recuperação segura | T3 | Implemented |
 | EDGE-01 | Edge cases | T4 | Implemented |
 | EDGE-02 | Edge cases | T4 | Implemented |
 | EDGE-03 | Edge cases | T12 | Pending |
-| EDGE-04 | Edge cases | T7 | Pending |
+| EDGE-04 | Edge cases | T7 | Implemented |
 | EDGE-05 | Edge cases | T10 | Pending |
 | EDGE-06 | Edge cases | T12 | Pending |
 

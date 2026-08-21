@@ -13,12 +13,14 @@ defmodule PolyhokSentinel2ParallelAnalysis.MixProject do
 
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger],
+      mod: {PolyhokSentinel2ParallelAnalysis.Application, []}
     ]
   end
 
   defp deps do
     [
+      {:jason, "~> 1.4"},
       {:poly_hok, path: "/home/daniel/poly_hok"}
     ]
   end

@@ -263,10 +263,10 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] The application starts Registry and DynamicSupervisor under one-for-one supervision.
-- [ ] Jason is locked and available without changing the PolyHok dependency.
-- [ ] Dynamic names use Registry terms rather than generated atoms.
-- [ ] Full gate passes with at least 3 supervision cases and no skipped tests.
+- [x] The application starts Registry and DynamicSupervisor under one-for-one supervision.
+- [x] Jason is locked and available without changing the PolyHok dependency.
+- [x] Dynamic names use Registry terms rather than generated atoms.
+- [x] Full gate passes with at least 3 supervision cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: full

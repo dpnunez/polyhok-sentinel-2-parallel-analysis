@@ -190,7 +190,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | ORCH-06 | P1: Orquestrar | T10 | Pending |
 | ORCH-07 | P1: Orquestrar | T13 | Pending |
 | ORCH-08 | P1: Orquestrar | T12 | Pending |
-| ORCH-09 | P1: Orquestrar | T9 | Pending |
+| ORCH-09 | P1: Orquestrar | T9 | Implemented |
 | ORCH-10 | P1: Orquestrar | T12 | Pending |
 | ORCH-11 | P1: Orquestrar | T13 | Pending |
 | READ-01 | P1: Ler dados | T11 | Pending |

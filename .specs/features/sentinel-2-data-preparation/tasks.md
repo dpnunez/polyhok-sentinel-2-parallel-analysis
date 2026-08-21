@@ -237,10 +237,10 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] A valid invocation exits 0 and writes a diagnostic containing the prepared `scene-id`.
-- [ ] Invalid input, metadata, space/permission and pipeline failures exit nonzero with actionable stderr.
-- [ ] The success diagnostic is machine-readable JSON without matrix content.
-- [ ] Build gate passes with at least 5 CLI cases and no skipped tests.
+- [x] A valid invocation exits 0 and writes a diagnostic containing the prepared `scene-id`.
+- [x] Invalid input, metadata, space/permission and pipeline failures exit nonzero with actionable stderr.
+- [x] The success diagnostic is machine-readable JSON without matrix content.
+- [x] Build gate passes with at least 5 CLI cases and no skipped tests.
 
 **Tests**: integration
 **Gate**: build

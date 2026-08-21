@@ -181,7 +181,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | PREP-11 | P1: Preparar cena | T6 | Implemented |
 | PREP-12 | P1: Preparar cena | T7 | Implemented |
 | PREP-13 | P1: Preparar cena | T5 | Implemented |
-| PREP-14 | P1: Preparar cena | T8 | Pending |
+| PREP-14 | P1: Preparar cena | T8 | Implemented |
 | ORCH-01 | P1: Orquestrar | T12 | Pending |
 | ORCH-02 | P1: Orquestrar | T13 | Pending |
 | ORCH-03 | P1: Orquestrar | T12 | Pending |

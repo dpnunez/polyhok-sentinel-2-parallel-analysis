@@ -287,11 +287,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Only a prepared manifest entry with exactly 1024, 4096 and 8192 metadata is accepted.
-- [ ] Paths remain under project root and every metadata field, file size and checksum matches.
-- [ ] Invalid JSON, missing files, mismatched sizes/checksums or stale source returns `{:error, reason}`.
-- [ ] Success returns scene ID, relative paths and the three crop metadata maps.
-- [ ] Full gate passes with at least 7 validator cases and no skipped tests.
+- [x] Only a prepared manifest entry with exactly 1024, 4096 and 8192 metadata is accepted.
+- [x] Paths remain under project root and every metadata field, file size and checksum matches.
+- [x] Invalid JSON, missing files, mismatched sizes/checksums or stale source returns `{:error, reason}`.
+- [x] Success returns scene ID, relative paths and the three crop metadata maps.
+- [x] Full gate passes with at least 7 validator cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: full

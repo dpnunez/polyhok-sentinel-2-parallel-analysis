@@ -186,8 +186,8 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | ORCH-02 | P1: Orquestrar | T13 | Pending |
 | ORCH-03 | P1: Orquestrar | T12 | Pending |
 | ORCH-04 | P1: Orquestrar | T12 | Pending |
-| ORCH-05 | P1: Orquestrar | T10 | Pending |
-| ORCH-06 | P1: Orquestrar | T10 | Pending |
+| ORCH-05 | P1: Orquestrar | T10 | Implemented |
+| ORCH-06 | P1: Orquestrar | T10 | Implemented |
 | ORCH-07 | P1: Orquestrar | T13 | Pending |
 | ORCH-08 | P1: Orquestrar | T12 | Pending |
 | ORCH-09 | P1: Orquestrar | T9 | Implemented |
@@ -209,7 +209,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | EDGE-02 | Edge cases | T4 | Implemented |
 | EDGE-03 | Edge cases | T12 | Pending |
 | EDGE-04 | Edge cases | T7 | Implemented |
-| EDGE-05 | Edge cases | T10 | Pending |
+| EDGE-05 | Edge cases | T10 | Implemented |
 | EDGE-06 | Edge cases | T12 | Pending |
 
 **Coverage:** 43 total, 43 mapped to tasks, 0 unmapped.

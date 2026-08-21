@@ -7,7 +7,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 **If the skill cannot be activated, STOP and tell the user.**
 
 **Design**: `.specs/features/sentinel-2-data-preparation/design.md`
-**Status**: Draft
+**Status**: In Progress
 
 ## Test Coverage Matrix
 
@@ -62,10 +62,10 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] `python/pyproject.toml` declares Python `>=3.11`, compatible NumPy/Rasterio/Pillow ranges, pytest and Ruff.
-- [ ] `sentinel2-prepare` resolves to the package CLI.
-- [ ] `.venv` is ignored and an import smoke test passes.
-- [ ] Quick gate passes with at least 1 Python test and no skipped tests.
+- [x] `python/pyproject.toml` declares Python `>=3.11`, compatible NumPy/Rasterio/Pillow ranges, pytest and Ruff.
+- [x] `sentinel2-prepare` resolves to the package CLI.
+- [x] `.venv` is ignored and an import smoke test passes.
+- [x] Quick gate passes with at least 1 Python test and no skipped tests.
 
 **Tests**: unit
 **Gate**: quick

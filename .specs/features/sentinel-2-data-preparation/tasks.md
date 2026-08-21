@@ -312,11 +312,11 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] Relative paths resolve only from configured project root.
-- [ ] Byte-size mismatch returns exactly `{:error, :invalid_byte_size}` before `Nx.from_binary/2`.
-- [ ] Both tensors have type `{:f, 32}`, shape `{height, width}`, row-major values and preserved NaNs.
-- [ ] Big-endian hosts would swap each 32-bit word before Nx import; little-endian hosts do not copy for swapping.
-- [ ] Full gate passes with at least 6 reader cases and no skipped tests.
+- [x] Relative paths resolve only from configured project root.
+- [x] Byte-size mismatch returns exactly `{:error, :invalid_byte_size}` before `Nx.from_binary/2`.
+- [x] Both tensors have type `{:f, 32}`, shape `{height, width}`, row-major values and preserved NaNs.
+- [x] Big-endian hosts would swap each 32-bit word before Nx import; little-endian hosts do not copy for swapping.
+- [x] Full gate passes with at least 6 reader cases and no skipped tests.
 
 **Tests**: unit
 **Gate**: full

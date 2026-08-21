@@ -193,11 +193,11 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | ORCH-09 | P1: Orquestrar | T9 | Implemented |
 | ORCH-10 | P1: Orquestrar | T12 | Pending |
 | ORCH-11 | P1: Orquestrar | T13 | Pending |
-| READ-01 | P1: Ler dados | T11 | Pending |
-| READ-02 | P1: Ler dados | T11 | Pending |
-| READ-03 | P1: Ler dados | T11 | Pending |
-| READ-04 | P1: Ler dados | T11 | Pending |
-| READ-05 | P1: Ler dados | T11 | Pending |
+| READ-01 | P1: Ler dados | T11 | Implemented |
+| READ-02 | P1: Ler dados | T11 | Implemented |
+| READ-03 | P1: Ler dados | T11 | Implemented |
+| READ-04 | P1: Ler dados | T11 | Implemented |
+| READ-05 | P1: Ler dados | T11 | Implemented |
 | SAFE-01 | P1: Recuperação segura | T7 | Implemented |
 | SAFE-02 | P1: Recuperação segura | T7 | Implemented |
 | SAFE-03 | P1: Recuperação segura | T7 | Implemented |

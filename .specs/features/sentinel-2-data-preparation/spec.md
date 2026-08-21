@@ -204,7 +204,7 @@ Every ambiguity is resolved or recorded here; nothing is left silently unclear.
 | SAFE-04 | P1: Recuperação segura | T7 | Pending |
 | SAFE-05 | P1: Recuperação segura | T7 | Pending |
 | SAFE-06 | P1: Recuperação segura | T13 | Pending |
-| SAFE-07 | P1: Recuperação segura | T3 | Pending |
+| SAFE-07 | P1: Recuperação segura | T3 | Implemented |
 | EDGE-01 | Edge cases | T4 | Pending |
 | EDGE-02 | Edge cases | T4 | Pending |
 | EDGE-03 | Edge cases | T12 | Pending |

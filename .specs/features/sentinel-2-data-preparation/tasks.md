@@ -110,9 +110,9 @@ Phase 4: T14 -> T15
 
 **Done when**:
 
-- [ ] `manifest.json` is valid JSON with `schema_version: 1` and an empty scenes map.
-- [ ] Fixture README documents source placement, CLI use and versioned/generated files.
-- [ ] Build gate passes with no generated binary or preview tracked.
+- [x] `manifest.json` is valid JSON with `schema_version: 1` and an empty scenes map.
+- [x] Fixture README documents source placement, CLI use and versioned/generated files.
+- [x] Build gate passes with no generated binary or preview tracked.
 
 **Tests**: none, matrix marks fixture schema/config as build-only
 **Gate**: build

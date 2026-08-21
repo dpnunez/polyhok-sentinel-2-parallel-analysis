@@ -107,6 +107,61 @@ defmodule PolyhokSentinel2ParallelAnalysis.Sentinel2.PreparationWorkerTest do
     assert byte_size(log) < 4500
   end
 
+  test "logs one bounded terminal record for success without prepared matrix content" do
+    root = fixture_root()
+    script = script(root, "printf prepared; exit 0")
+    validator = fn _, _ -> {:ok, %{scene_id: @scene_id, matrix: "matrix-secret"}} end
+
+    log =
+      capture_log(fn ->
+        assert {:ok, %{scene_id: @scene_id, matrix: "matrix-secret"}} =
+                 run_worker(root, entrypoint: script, validator: validator)
+      end)
+
+    assert terminal_log_count(log) == 1
+    assert log =~ "scene_id=#{@scene_id}"
+    assert log =~ ~r/duration_ms=\d+/
+    assert log =~ "result=ok"
+    assert log =~ ~s(diagnostic="prepared")
+    refute log =~ "matrix-secret"
+  end
+
+  test "logs one bounded terminal record for validation failure" do
+    root = fixture_root()
+    script = script(root, "printf invalid-artifacts; exit 0")
+    validator = fn _, _ -> {:error, :invalid_manifest} end
+
+    log =
+      capture_log(fn ->
+        assert {:error, :invalid_manifest} =
+                 run_worker(root, entrypoint: script, validator: validator)
+      end)
+
+    assert terminal_log_count(log) == 1
+    assert log =~ "scene_id=#{@scene_id}"
+    assert log =~ ~r/duration_ms=\d+/
+    assert log =~ "result=error::invalid_manifest"
+    assert log =~ ~s(diagnostic="invalid-artifacts")
+    assert byte_size(log) < 4500
+  end
+
+  test "logs one bounded terminal record for timeout" do
+    root = fixture_root()
+    script = script(root, "printf waiting; sleep 2; exit 0")
+
+    log =
+      capture_log(fn ->
+        assert {:error, :timeout} = run_worker(root, entrypoint: script, timeout: 50)
+      end)
+
+    assert terminal_log_count(log) == 1
+    assert log =~ "scene_id=#{@scene_id}"
+    assert log =~ ~r/duration_ms=\d+/
+    assert log =~ "result=error::timeout"
+    assert log =~ ~s(diagnostic="waiting")
+    assert byte_size(log) < 4500
+  end
+
   defp run_worker(root, options) do
     {_pid, reference} = start_worker(root, options)
     assert_receive {^reference, result}, 2_500
@@ -129,6 +184,10 @@ defmodule PolyhokSentinel2ParallelAnalysis.Sentinel2.PreparationWorkerTest do
 
     {:ok, pid} = PreparationWorker.start_link(Keyword.merge(defaults, options))
     {pid, reference}
+  end
+
+  defp terminal_log_count(log) do
+    log |> String.split("sentinel2 preparation") |> length() |> Kernel.-(1)
   end
 
   defp fixture_root do

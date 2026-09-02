@@ -1,5 +1,6 @@
 .agents
 .codex
+.DS_Store
 
 # Elixir/Mix
 /_build/
@@ -12,13 +13,32 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+/python/.venv/
+/python/**/__pycache__/
+/python/**/*.egg-info/
+/python/.pytest_cache/
+/python/.ruff_cache/
 
 # Windows download metadata
 *:Zone.Identifier
 
 # Full local Sentinel-2 products
 /fixtures/sentinel-2/**/source/
-/fixtures/sentinel-2/**/imagery/*.jp2
 
-# Generated Sentinel-2 preparation outputs
-/fixtures/sentinel-2/**/prepared/
+# Large source/intermediate raster files
+/fixtures/sentinel-2/**/*.jp2
+/fixtures/sentinel-2/**/*.tif
+/fixtures/sentinel-2/**/*.tiff
+
+# Generated numeric arrays
+/fixtures/sentinel-2/**/*.f32
+/fixtures/sentinel-2/**/*.bin
+/fixtures/sentinel-2/**/*.npy
+/fixtures/sentinel-2/**/*.npz
+
+# Generated debug previews
+/fixtures/sentinel-2/**/prepared/**/preview.png
+
+# Incomplete preparation files
+/fixtures/sentinel-2/**/*.tmp
+/fixtures/sentinel-2/**/*.partial

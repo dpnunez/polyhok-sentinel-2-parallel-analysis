@@ -1,0 +1,15 @@
+{
+  "scenes": {
+    "s2b-t22hck-20240725t134122": {
+      "crops": [
+        "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/1024x1024/metadata.json",
+        "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/4096x4096/metadata.json",
+        "fixtures/sentinel-2/scenes/s2b-t22hck-20240725t134122/prepared/8192x8192/metadata.json"
+      ],
+      "product_id": "S2B_MSIL2A_20240725T133149_N0511_R081_T22HCK_20240725T185341",
+      "source_checksum": "6dff157a42ad1e5b063a4d66749367a37289ae927cec57f2273471bca02b4697",
+      "status": "prepared"
+    }
+  },
+  "schema_version": 1
+}

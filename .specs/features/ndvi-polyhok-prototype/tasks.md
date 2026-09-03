@@ -9,7 +9,7 @@ atomic commit, adequacy review, independent Verifier and discrimination sensor.
 **If the skill cannot be activated, STOP and tell the user.**
 
 **Design**: `.specs/features/ndvi-polyhok-prototype/design.md`
-**Status**: Approved
+**Status**: Done
 
 ## Test Coverage Matrix
 
@@ -88,11 +88,11 @@ metadata-last JSON publication.
 
 **Done when**:
 
-- [ ] A valid tensor writes exact headerless bytes and all seven metadata fields with matching SHA-256.
-- [ ] Re-reading the binary preserves finite and NaN positions, shape and row-major order.
-- [ ] Invalid tensors and controlled I/O failures return errors without publishing final metadata.
-- [ ] Publication renames the validated binary before renaming metadata into its final path.
-- [ ] Build gate passes with at least 54 total tests and no disabled new tests.
+- [x] A valid tensor writes exact headerless bytes and all seven metadata fields with matching SHA-256.
+- [x] Re-reading the binary preserves finite and NaN positions, shape and row-major order.
+- [x] Invalid tensors and controlled I/O failures return errors without publishing final metadata.
+- [x] Publication renames the validated binary before renaming metadata into its final path.
+- [x] Build gate passes with at least 56 CPU tests and no disabled new tests.
 
 **Tests**: unit in `test/sentinel_2/ndvi_result_writer_test.exs`
 **Gate**: build
@@ -130,4 +130,4 @@ Phase 1: T1 ------> T2
 | Task | Requirements | Status |
 | ---- | ------------ | ------ |
 | T1 | NDVI-01 through NDVI-22 | Done |
-| T2 | NDVI-23 through NDVI-27 | Pending |
+| T2 | NDVI-23 through NDVI-27 | Done |

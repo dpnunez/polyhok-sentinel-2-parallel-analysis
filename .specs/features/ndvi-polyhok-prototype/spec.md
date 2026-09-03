@@ -216,11 +216,11 @@ checksum.
 | NDVI-20 | Edge cases | T1 | Implemented |
 | NDVI-21 | Edge cases | T1 | Implemented |
 | NDVI-22 | Edge cases | T1 | Implemented |
-| NDVI-23 | P1: Persistir o resultado numérico | T2 | Pending |
-| NDVI-24 | P1: Persistir o resultado numérico | T2 | Pending |
-| NDVI-25 | P1: Persistir o resultado numérico | T2 | Pending |
-| NDVI-26 | P1: Persistir o resultado numérico | T2 | Pending |
-| NDVI-27 | P1: Persistir o resultado numérico | T2 | Pending |
+| NDVI-23 | P1: Persistir o resultado numérico | T2 | Implemented |
+| NDVI-24 | P1: Persistir o resultado numérico | T2 | Implemented |
+| NDVI-25 | P1: Persistir o resultado numérico | T2 | Implemented |
+| NDVI-26 | P1: Persistir o resultado numérico | T2 | Implemented |
+| NDVI-27 | P1: Persistir o resultado numérico | T2 | Implemented |
 
 **Coverage:** 27 total, 27 mapped to tasks, 0 unmapped.
 

@@ -9,7 +9,7 @@ atomic commit, adequacy review, independent Verifier and discrimination sensor.
 **If the skill cannot be activated, STOP and tell the user.**
 
 **Design**: `.specs/features/ndvi-polyhok-prototype/design.md`
-**Status**: Done
+**Status**: In Progress
 
 ## Test Coverage Matrix
 
@@ -36,10 +36,11 @@ atomic commit, adequacy review, independent Verifier and discrimination sensor.
 
 ## Execution Plan
 
-Tasks execute sequentially in one phase.
+Tasks execute sequentially by phase.
 
 ```text
 Phase 1: T1 -> T2
+Phase 2: T3 -> T4
 ```
 
 ## Task Breakdown
@@ -98,10 +99,61 @@ metadata-last JSON publication.
 **Gate**: build
 **Commit**: `feat(ndvi): persist NDVI result artifacts`
 
+### Phase 2: Validation Fixes
+
+#### T3: Discriminate signed zero and unclamped NDVI
+
+**What**: Strengthen the GPU contract test with explicit negative-zero and
+out-of-range results found missing by independent validation.
+**Where**: `test/sentinel_2/ndvi_test.exs`
+**Depends on**: T2
+**Reuses**: Existing tagged GPU cases and literal expected outcomes.
+**Requirement**: NDVI-06 and NDVI-08.
+
+**Tools**:
+
+- MCP: NONE
+- Skill: `tlc-spec-driven`
+
+**Done when**:
+
+- [ ] A `-0.0f + -0.0f` denominator produces `NaN` on the GPU.
+- [ ] A finite pair with expected NDVI outside `[-1, 1]` preserves the literal result without clamp.
+- [ ] Full gate passes and both behavior mutations are killed.
+
+**Tests**: GPU integration in `test/sentinel_2/ndvi_test.exs`
+**Gate**: full
+**Commit**: `test(ndvi): cover signed zero and unclamped output`
+
+#### T4: Discriminate metadata-last publication
+
+**What**: Strengthen the writer failure test so publishing metadata before the
+binary leaves observable invalid state and fails the test.
+**Where**: `test/sentinel_2/ndvi_result_writer_test.exs`
+**Depends on**: T3
+**Reuses**: Existing controlled filesystem failure test.
+**Requirement**: NDVI-25 and NDVI-26.
+
+**Tools**:
+
+- MCP: NONE
+- Skill: `tlc-spec-driven`
+
+**Done when**:
+
+- [ ] A blocked final binary promotion returns an error.
+- [ ] No final metadata exists when binary promotion fails.
+- [ ] Build gate passes and the metadata-before-binary mutation is killed.
+
+**Tests**: unit in `test/sentinel_2/ndvi_result_writer_test.exs`
+**Gate**: build
+**Commit**: `test(ndvi): enforce metadata-last publication`
+
 ## Phase Execution Map
 
 ```text
 Phase 1: T1 ------> T2
+Phase 2: T3 ------> T4
 ```
 
 ## Task Granularity Check
@@ -110,6 +162,8 @@ Phase 1: T1 ------> T2
 | ---- | ----- | ------ |
 | T1 | One calculation module plus co-located tests | Granular |
 | T2 | One persistence module plus co-located tests | Granular |
+| T3 | One GPU test file | Granular |
+| T4 | One persistence test file | Granular |
 
 ## Diagram-Definition Cross-Check
 
@@ -117,6 +171,8 @@ Phase 1: T1 ------> T2
 | ---- | ---------- | ------------- | ------ |
 | T1 | None | No incoming edge | Match |
 | T2 | T1 | T1 -> T2 | Match |
+| T3 | T2 | Phase 1 -> Phase 2; T2 -> T3 | Match |
+| T4 | T3 | T3 -> T4 | Match |
 
 ## Test Co-location Validation
 
@@ -124,6 +180,8 @@ Phase 1: T1 ------> T2
 | ---- | --------------------------- | --------------- | --------- | ------ |
 | T1 | NDVI calculation and CUDA boundary | unit + GPU integration | unit + GPU integration | OK |
 | T2 | NDVI result persistence | unit | unit | OK |
+| T3 | PolyHok CUDA kernel boundary | GPU integration | GPU integration | OK |
+| T4 | NDVI result persistence | unit | unit | OK |
 
 ## Requirement Traceability
 
@@ -131,3 +189,5 @@ Phase 1: T1 ------> T2
 | ---- | ------------ | ------ |
 | T1 | NDVI-01 through NDVI-22 | Done |
 | T2 | NDVI-23 through NDVI-27 | Done |
+| T3 | NDVI-06 and NDVI-08 | Pending |
+| T4 | NDVI-25 and NDVI-26 | Pending |

@@ -26,6 +26,30 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - evidence: .specs/features/sentinel-2-data-preparation/validation.md:57 (repository/configuration)
 - last seen: 2026-08-21T00:53:25Z
 
+### L-003 - Exercite separadamente classes IEEE nomeadas explicitamente no contrato
+- signal: `ac_gap` · recurrence: 1 feature(s) · scope: `ndvi` · harmful: 0
+- features: ndvi-polyhok-prototype
+- evidence: validation.md:NDVI-06 (ndvi)
+- last seen: 2026-09-03T12:17:35Z
+
+### L-004 - Para provar ausência de clamp, use um resultado esperado fora do intervalo de clamp
+- signal: `ac_gap` · recurrence: 1 feature(s) · scope: `ndvi` · harmful: 0
+- features: ndvi-polyhok-prototype
+- evidence: validation.md:NDVI-08 (ndvi)
+- last seen: 2026-09-03T12:17:35Z
+
+### L-005 - Teste publicação metadata-last com uma falha induzida entre os dois pontos de promoção
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `persistence` · harmful: 0
+- features: ndvi-polyhok-prototype
+- evidence: validation.md:M3 (persistence)
+- last seen: 2026-09-03T12:17:35Z
+
+### L-006 - Inicialize explicitamente metadata JIT efêmera antes de executar kernels PolyHok em aplicações Mix compiladas
+- signal: `spec_deviation` · recurrence: 1 feature(s) · scope: `polyhok` · harmful: 0
+- features: ndvi-polyhok-prototype
+- evidence: lib/polyhok_sentinel_2_parallel_analysis/sentinel_2/ndvi.ex:42 (polyhok)
+- last seen: 2026-09-03T12:17:35Z
+
 ## Quarantined (failed when applied - ignore)
 
 A confirmed lesson that recurred alongside failure. Kept for the maintainer to review.

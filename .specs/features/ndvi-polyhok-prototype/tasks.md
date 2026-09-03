@@ -21,7 +21,7 @@ atomic commit, adequacy review, independent Verifier and discrimination sensor.
 | Code Layer | Required Test Type | Coverage Expectation | Location Pattern | Run Command |
 | ---------- | ------------------ | -------------------- | ---------------- | ----------- |
 | NDVI calculation and input validation | unit + GPU integration | Every NDVI-01..22 outcome covered by assertions or structural source evidence; all six approved pixels execute together | `test/sentinel_2/ndvi_test.exs` | `mix test --exclude gpu test/sentinel_2/ndvi_test.exs` |
-| PolyHok CUDA kernel boundary | GPU integration | One `2x3` launch proves finite, NaN, near-zero, order, type, shape and non-block-multiple behavior | `test/sentinel_2/ndvi_test.exs` | `mix test --include gpu test/sentinel_2/ndvi_test.exs` |
+| PolyHok CUDA kernel boundary | GPU integration | One `2x3` launch proves finite, NaN, order, type, shape and non-block-multiple behavior; one `1x1` launch proves the smallest nonzero float32 is divided without epsilon | `test/sentinel_2/ndvi_test.exs` | `mix test --include gpu test/sentinel_2/ndvi_test.exs` |
 | NDVI result persistence | unit | Every NDVI-23..27 field, byte, checksum and failure-publication outcome maps to an assertion | `test/sentinel_2/ndvi_result_writer_test.exs` | `mix test --exclude gpu test/sentinel_2/ndvi_result_writer_test.exs` |
 
 ## Gate Check Commands
@@ -62,11 +62,11 @@ separate H2D, single-kernel and D2H operations.
 
 **Done when**:
 
-- [ ] Invalid non-tensor, type, rank, empty and mismatched inputs raise `ArgumentError` before GPU access.
-- [ ] `compute/2` composes the three public boundaries in H2D, kernel and D2H order.
-- [ ] `run_kernel/2` invokes `Ske.map2/3` once with the exact float32 NDVI policy and no CPU implementation.
-- [ ] One tagged `2x3` GPU test asserts the three finite literals, three NaNs, type, shape and pixel order.
-- [ ] Full gate passes with at least 51 total tests and no disabled new tests.
+- [x] Invalid non-tensor, type, rank, empty and mismatched inputs raise `ArgumentError` before GPU access.
+- [x] `compute/2` composes the three public boundaries in H2D, kernel and D2H order.
+- [x] `run_kernel/2` invokes `Ske.map2/3` once with the exact float32 NDVI policy and no CPU implementation.
+- [x] One tagged `2x3` GPU test asserts the three finite literals, three NaNs, type, shape and pixel order; a tagged `1x1` case asserts the smallest nonzero float32 is divided.
+- [x] Full gate passes with 53 CPU tests and 8 selected NDVI tests, with no disabled new tests.
 
 **Tests**: unit + GPU integration in `test/sentinel_2/ndvi_test.exs`
 **Gate**: full
@@ -129,5 +129,5 @@ Phase 1: T1 ------> T2
 
 | Task | Requirements | Status |
 | ---- | ------------ | ------ |
-| T1 | NDVI-01 through NDVI-22 | Pending |
+| T1 | NDVI-01 through NDVI-22 | Done |
 | T2 | NDVI-23 through NDVI-27 | Pending |

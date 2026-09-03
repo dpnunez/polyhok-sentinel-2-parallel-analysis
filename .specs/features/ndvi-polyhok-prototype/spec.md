@@ -194,28 +194,28 @@ checksum.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| NDVI-01 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-02 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-03 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-04 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-05 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-06 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-07 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-08 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-09 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-10 | P1: Calcular NDVI em um único kernel GPU | T1 | Pending |
-| NDVI-11 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Pending |
-| NDVI-12 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Pending |
-| NDVI-13 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Pending |
-| NDVI-14 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Pending |
-| NDVI-15 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Pending |
-| NDVI-16 | P2: Preservar fronteiras para medições posteriores | T1 | Pending |
-| NDVI-17 | P2: Preservar fronteiras para medições posteriores | T1 | Pending |
-| NDVI-18 | P2: Preservar fronteiras para medições posteriores | T1 | Pending |
-| NDVI-19 | Edge cases | T1 | Pending |
-| NDVI-20 | Edge cases | T1 | Pending |
-| NDVI-21 | Edge cases | T1 | Pending |
-| NDVI-22 | Edge cases | T1 | Pending |
+| NDVI-01 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-02 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-03 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-04 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-05 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-06 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-07 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-08 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-09 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-10 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
+| NDVI-11 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
+| NDVI-12 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
+| NDVI-13 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
+| NDVI-14 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
+| NDVI-15 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
+| NDVI-16 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
+| NDVI-17 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
+| NDVI-18 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
+| NDVI-19 | Edge cases | T1 | Implemented |
+| NDVI-20 | Edge cases | T1 | Implemented |
+| NDVI-21 | Edge cases | T1 | Implemented |
+| NDVI-22 | Edge cases | T1 | Implemented |
 | NDVI-23 | P1: Persistir o resultado numérico | T2 | Pending |
 | NDVI-24 | P1: Persistir o resultado numérico | T2 | Pending |
 | NDVI-25 | P1: Persistir o resultado numérico | T2 | Pending |

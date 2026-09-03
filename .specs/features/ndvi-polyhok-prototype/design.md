@@ -30,6 +30,12 @@ flowchart LR
 acionáveis para que a instrumentação posterior possa envolver cada fronteira sem
 alterar o núcleo.
 
+Em aplicações Mix compiladas, o processo efêmero usado pelo JIT do PolyHok não
+mantém o AST de `Ske.map2_kernel/5` até a execução. `run_kernel/2` registrará esse
+mesmo AST no servidor JIT antes de chamar `Ske.map2/3`. O registro não lança
+kernel nem transfere dados; ele apenas restaura o metadata que o PolyHok mantém em
+memória quando seus exemplos são compilados e executados no mesmo processo.
+
 ---
 
 ## Chosen Approach
@@ -221,6 +227,7 @@ resultados esperados serão literais definidos no contrato.
 | Geração de `NaN` pelo JIT ainda não foi demonstrada. | `/home/daniel/poly_hok/lib/poly_hok/cuda_backend.ex:696` | A expressão pode não compilar ou pode produzir valor diferente do contrato. | Fazer do caso sintético GPU o primeiro gate; parar e revisar o design se falhar. |
 | `Ske.map2/3` agrupa alocação da saída e lançamento. | `/home/daniel/poly_hok/lib/poly_hok/ske.ex:151` | Cronometrar `run_kernel/2` no host incluirá custo de alocação/dispatch, não tempo CUDA puro. | Preservar a fronteira agora e usar CUDA events ou instrumentação NIF apenas na feature de benchmark. |
 | O lançamento consulta apenas `cudaGetLastError`. | `/home/daniel/poly_hok/lib/poly_hok/cuda_backend.ex:838` | Uma falha assíncrona pode aparecer somente na cópia D2H. | Não reinterpretar o ponto da falha; propagar o erro nativo e tratar sincronização na instrumentação futura. |
+| O servidor JIT é ligado ao processo compilador. | `/home/daniel/poly_hok/lib/poly_hok/JIT.ex:259` | O AST de `Ske.map2_kernel/5` desaparece antes da execução em uma aplicação Mix compilada. | Registrar em runtime o AST idêntico do kernel antes de delegar a execução a `Ske.map2/3`. |
 | O teste GPU é excluído por padrão. | `test/test_helper.exs:2` | O gate comum não comprova o kernel. | Definir um gate GPU explícito e obrigatório para concluir as tarefas do núcleo. |
 | `Nx.to_binary/1` usa endianidade do sistema. | `deps/nx/lib/nx.ex:1994` | O arquivo persistido divergiria em host big-endian. | Normalizar palavras de 32 bits antes da escrita e testar a função de conversão existente. |
 | A dependência PolyHok usa caminho local absoluto. | `mix.exs:26` | O protótipo não compila em outra máquina sem o mesmo checkout. | Não alterar nesta feature; documentar como pré-condição do ambiente já validado. |

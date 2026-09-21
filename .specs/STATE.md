@@ -20,11 +20,11 @@
 
 ## Handoff
 
-- **Feature**: sentinel-2-data-preparation
-- **Phase / Task**: execução e verificação concluídas
-- **Completed**: T1-T15, correções ORCH-10/SAFE-07 e validação independente PASS
+- **Feature**: ndvi-polyhok-prototype
+- **Phase / Task**: execução e verificação independente concluídas
+- **Completed**: T1-T4 e validação independente PASS (27/27 critérios, 3/3 mutações mortas)
 - **In-progress** (file:line): none
-- **Next step**: integrar ou revisar a feature conforme o fluxo do projeto
+- **Next step**: integrar ou revisar a feature, ou iniciar a próxima etapa do TCC
 - **Blockers**: none
-- **Uncommitted files**: none after the validation commit
-- **Branch**: feat/prepare-data-pipe
+- **Uncommitted files**: `.notebook/poly-hok-integration.md` (alteração preexistente preservada fora da feature)
+- **Branch**: feat/implement-polyhok-ndvi-calc

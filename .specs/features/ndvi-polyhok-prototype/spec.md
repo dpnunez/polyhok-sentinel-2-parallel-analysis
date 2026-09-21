@@ -1,6 +1,6 @@
 # Especificação do Protótipo Inicial de NDVI via PolyHok
 
-**Status:** Approved on 2026-09-02
+**Status:** Approved on 2026-09-02; verified on 2026-09-21
 
 ## Problem Statement
 
@@ -11,19 +11,19 @@ preservar as fronteiras necessárias para a futura avaliação de desempenho.
 
 ## Goals
 
-- [ ] Disponibilizar uma operação Elixir que calcule NDVI em GPU a partir de duas
+- [x] Disponibilizar uma operação Elixir que calcule NDVI em GPU a partir de duas
       matrizes Nx bidimensionais `float32` compatíveis.
-- [ ] Aplicar em um único kernel a fórmula e todos os casos especiais definidos em
+- [x] Aplicar em um único kernel a fórmula e todos os casos especiais definidos em
       `docs/ndvi-numerical-contract.md`.
-- [ ] Retornar ao host um tensor Nx `float32` com a mesma forma e correspondência
+- [x] Retornar ao host um tensor Nx `float32` com a mesma forma e correspondência
       espacial das entradas.
-- [ ] Comprovar o comportamento do kernel com os seis casos pequenos de resultado
+- [x] Comprovar o comportamento do kernel com os seis casos pequenos de resultado
       conhecido aprovados no contrato.
-- [ ] Manter transferência host-GPU, execução do kernel e transferência GPU-host
+- [x] Manter transferência host-GPU, execução do kernel e transferência GPU-host
       como fronteiras distintas para instrumentação posterior.
-- [ ] Persistir opcionalmente o tensor retornado em um artefato binário simples e
+- [x] Persistir opcionalmente o tensor retornado em um artefato binário simples e
       reproduzível, sem incluir a escrita no tempo do cálculo GPU.
-- [ ] Implementar o menor núcleo necessário, reutilizando as primitivas do PolyHok
+- [x] Implementar o menor núcleo necessário, reutilizando as primitivas do PolyHok
       e sem criar abstrações genéricas ou extensibilidade antecipada.
 
 ## Out of Scope
@@ -194,33 +194,33 @@ checksum.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| NDVI-01 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-02 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-03 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-04 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-05 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-06 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-07 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-08 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-09 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-10 | P1: Calcular NDVI em um único kernel GPU | T1 | Implemented |
-| NDVI-11 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
-| NDVI-12 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
-| NDVI-13 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
-| NDVI-14 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
-| NDVI-15 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Implemented |
-| NDVI-16 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
-| NDVI-17 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
-| NDVI-18 | P2: Preservar fronteiras para medições posteriores | T1 | Implemented |
-| NDVI-19 | Edge cases | T1 | Implemented |
-| NDVI-20 | Edge cases | T1 | Implemented |
-| NDVI-21 | Edge cases | T1 | Implemented |
-| NDVI-22 | Edge cases | T1 | Implemented |
-| NDVI-23 | P1: Persistir o resultado numérico | T2 | Implemented |
-| NDVI-24 | P1: Persistir o resultado numérico | T2 | Implemented |
-| NDVI-25 | P1: Persistir o resultado numérico | T2 | Implemented |
-| NDVI-26 | P1: Persistir o resultado numérico | T2 | Implemented |
-| NDVI-27 | P1: Persistir o resultado numérico | T2 | Implemented |
+| NDVI-01 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-02 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-03 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-04 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-05 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-06 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-07 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-08 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-09 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-10 | P1: Calcular NDVI em um único kernel GPU | T1 | Verified |
+| NDVI-11 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Verified |
+| NDVI-12 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Verified |
+| NDVI-13 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Verified |
+| NDVI-14 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Verified |
+| NDVI-15 | P1: Rejeitar entradas incompatíveis antes da GPU | T1 | Verified |
+| NDVI-16 | P2: Preservar fronteiras para medições posteriores | T1 | Verified |
+| NDVI-17 | P2: Preservar fronteiras para medições posteriores | T1 | Verified |
+| NDVI-18 | P2: Preservar fronteiras para medições posteriores | T1 | Verified |
+| NDVI-19 | Edge cases | T1 | Verified |
+| NDVI-20 | Edge cases | T1 | Verified |
+| NDVI-21 | Edge cases | T1 | Verified |
+| NDVI-22 | Edge cases | T1 | Verified |
+| NDVI-23 | P1: Persistir o resultado numérico | T2 | Verified |
+| NDVI-24 | P1: Persistir o resultado numérico | T2 | Verified |
+| NDVI-25 | P1: Persistir o resultado numérico | T2 | Verified |
+| NDVI-26 | P1: Persistir o resultado numérico | T2 | Verified |
+| NDVI-27 | P1: Persistir o resultado numérico | T2 | Verified |
 
 **Coverage:** 27 total, 27 mapped to tasks, 0 unmapped.
 
@@ -228,19 +228,19 @@ checksum.
 
 ## Success Criteria
 
-- [ ] A operação pública executa os seis casos aprovados em uma única matriz GPU e
+- [x] A operação pública executa os seis casos aprovados em uma única matriz GPU e
       retorna três resultados finitos dentro de tolerância absoluta `1.0e-6` e
       três resultados `NaN` nas posições corretas.
-- [ ] O resultado preserva tipo `{:f, 32}`, forma `{2, 3}` e ordem dos seis pixels.
-- [ ] Entradas de tipo, dimensionalidade ou forma inválidos falham antes do acesso
+- [x] O resultado preserva tipo `{:f, 32}`, forma `{2, 3}` e ordem dos seis pixels.
+- [x] Entradas de tipo, dimensionalidade ou forma inválidos falham antes do acesso
       à GPU com o motivo especificado.
-- [ ] A implementação contém uma única chamada de kernel para o cálculo completo e
+- [x] A implementação contém uma única chamada de kernel para o cálculo completo e
       mantém H2D, kernel e D2H como fronteiras distintas.
-- [ ] O gate GPU do protótipo e o gate completo sem GPU terminam com zero falhas.
-- [ ] Nenhuma implementação CPU de NDVI, benchmark, persistência ou produto
+- [x] O gate GPU do protótipo e o gate completo sem GPU terminam com zero falhas.
+- [x] Nenhuma implementação CPU de NDVI, benchmark, persistência ou produto
       complementar é introduzido nesta feature além da escrita binária explícita
       definida em NDVI-23 a NDVI-27.
-- [ ] O resultado persistido pode ser relido com os mesmos valores, posições `NaN`,
+- [x] O resultado persistido pode ser relido com os mesmos valores, posições `NaN`,
       tipo e forma, e seu checksum corresponde ao metadata publicado.
-- [ ] Nenhum framework genérico, comportamento, configuração dinâmica da fórmula
+- [x] Nenhum framework genérico, comportamento, configuração dinâmica da fórmula
       ou abstração sem uso imediato é introduzido nesta feature.

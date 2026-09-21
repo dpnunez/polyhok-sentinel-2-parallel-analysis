@@ -9,7 +9,7 @@ atomic commit, adequacy review, independent Verifier and discrimination sensor.
 **If the skill cannot be activated, STOP and tell the user.**
 
 **Design**: `.specs/features/ndvi-polyhok-prototype/design.md`
-**Status**: In Progress
+**Status**: Complete
 
 ## Test Coverage Matrix
 

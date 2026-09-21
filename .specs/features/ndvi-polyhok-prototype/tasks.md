@@ -141,9 +141,9 @@ binary leaves observable invalid state and fails the test.
 
 **Done when**:
 
-- [ ] A blocked final binary promotion returns an error.
-- [ ] No final metadata exists when binary promotion fails.
-- [ ] Build gate passes and the metadata-before-binary mutation is killed.
+- [x] A blocked final binary promotion returns an error.
+- [x] No final metadata exists when binary promotion fails.
+- [x] Build gate passes and the metadata-before-binary mutation is killed.
 
 **Tests**: unit in `test/sentinel_2/ndvi_result_writer_test.exs`
 **Gate**: build
@@ -190,4 +190,4 @@ Phase 2: T3 ------> T4
 | T1 | NDVI-01 through NDVI-22 | Done |
 | T2 | NDVI-23 through NDVI-27 | Done |
 | T3 | NDVI-06 and NDVI-08 | Done |
-| T4 | NDVI-25 and NDVI-26 | Pending |
+| T4 | NDVI-25 and NDVI-26 | Done |

@@ -67,6 +67,17 @@ defmodule PolyhokSentinel2ParallelAnalysis.Sentinel2.Ndvi.ResultWriterTest do
     refute File.exists?(Path.join(destination, "metadata.json"))
   end
 
+  test "does not publish metadata when final binary promotion fails" do
+    destination = temporary_directory()
+    final_binary = Path.join(destination, "ndvi.polyhok.f32")
+    File.mkdir_p!(final_binary)
+
+    assert {:error, :eisdir} =
+             ResultWriter.write(Nx.tensor([[1.0]], type: {:f, 32}), destination)
+
+    refute File.exists?(Path.join(destination, "metadata.json"))
+  end
+
   defp temporary_directory do
     path = Path.join(System.tmp_dir!(), "ndvi-result-#{System.unique_integer([:positive])}")
     on_exit(fn -> File.rm_rf!(path) end)

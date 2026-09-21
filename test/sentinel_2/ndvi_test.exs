@@ -97,4 +97,14 @@ defmodule PolyhokSentinel2ParallelAnalysis.Sentinel2.NdviTest do
 
     assert Nx.to_flat_list(result) == [1.0]
   end
+
+  @tag :gpu
+  test "handles negative zero and preserves an output outside the clamp range" do
+    b04 = Nx.tensor([[-0.0, 2.0]], type: {:f, 32})
+    b08 = Nx.tensor([[-0.0, -1.0]], type: {:f, 32})
+
+    result = Ndvi.compute(b04, b08)
+
+    assert Nx.to_flat_list(result) == [:nan, -3.0]
+  end
 end

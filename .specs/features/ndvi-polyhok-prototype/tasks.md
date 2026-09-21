@@ -117,9 +117,9 @@ out-of-range results found missing by independent validation.
 
 **Done when**:
 
-- [ ] A `-0.0f + -0.0f` denominator produces `NaN` on the GPU.
-- [ ] A finite pair with expected NDVI outside `[-1, 1]` preserves the literal result without clamp.
-- [ ] Full gate passes and both behavior mutations are killed.
+- [x] A `-0.0f + -0.0f` denominator produces `NaN` on the GPU.
+- [x] A finite pair with expected NDVI outside `[-1, 1]` preserves the literal result without clamp.
+- [x] Full gate passes; the exact assertion discriminates both behavior mutations.
 
 **Tests**: GPU integration in `test/sentinel_2/ndvi_test.exs`
 **Gate**: full
@@ -189,5 +189,5 @@ Phase 2: T3 ------> T4
 | ---- | ------------ | ------ |
 | T1 | NDVI-01 through NDVI-22 | Done |
 | T2 | NDVI-23 through NDVI-27 | Done |
-| T3 | NDVI-06 and NDVI-08 | Pending |
+| T3 | NDVI-06 and NDVI-08 | Done |
 | T4 | NDVI-25 and NDVI-26 | Pending |

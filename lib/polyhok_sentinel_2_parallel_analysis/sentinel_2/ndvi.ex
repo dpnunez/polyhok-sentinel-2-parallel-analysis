@@ -25,6 +25,8 @@ defmodule PolyhokSentinel2ParallelAnalysis.Sentinel2.Ndvi do
       gpu_b04,
       gpu_b08,
       PolyHok.phok(fn b04, b08 ->
+        # NaN is unequal to itself, while both +0.0 and -0.0 compare equal to 0.0.
+        # Self-division preserves or produces NaN, as required for an invalid NDVI denominator.
         if b08 + b04 != b08 + b04 || b08 + b04 == 0.0 do
           return((b08 + b04) / (b08 + b04))
         else

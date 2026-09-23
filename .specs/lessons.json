@@ -3,7 +3,7 @@
   "promote_threshold": 2,
   "window_days": 45,
   "quarantine_threshold": 2,
-  "next_id": 3,
+  "next_id": 7,
   "lessons": [
     {
       "id": "L-001",
@@ -40,6 +40,78 @@
       ],
       "created": "2026-08-21T00:53:25Z",
       "last_seen": "2026-08-21T00:53:25Z"
+    },
+    {
+      "id": "L-003",
+      "key": "ac_gap::exercite separadamente classes ieee nomeadas explicitamente no contrato",
+      "text": "Exercite separadamente classes IEEE nomeadas explicitamente no contrato",
+      "signal": "ac_gap",
+      "scope": "ndvi",
+      "status": "candidate",
+      "features": [
+        "ndvi-polyhok-prototype"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "validation.md:NDVI-06 (ndvi)"
+      ],
+      "created": "2026-09-03T12:17:35Z",
+      "last_seen": "2026-09-03T12:17:35Z"
+    },
+    {
+      "id": "L-004",
+      "key": "ac_gap::para provar ausencia de clamp use um resultado esperado fora do intervalo de clamp",
+      "text": "Para provar ausência de clamp, use um resultado esperado fora do intervalo de clamp",
+      "signal": "ac_gap",
+      "scope": "ndvi",
+      "status": "candidate",
+      "features": [
+        "ndvi-polyhok-prototype"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "validation.md:NDVI-08 (ndvi)"
+      ],
+      "created": "2026-09-03T12:17:35Z",
+      "last_seen": "2026-09-03T12:17:35Z"
+    },
+    {
+      "id": "L-005",
+      "key": "surviving_mutant::teste publicacao metadata last com uma falha induzida entre os dois pontos de promocao",
+      "text": "Teste publicação metadata-last com uma falha induzida entre os dois pontos de promoção",
+      "signal": "surviving_mutant",
+      "scope": "persistence",
+      "status": "candidate",
+      "features": [
+        "ndvi-polyhok-prototype"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "validation.md:M3 (persistence)"
+      ],
+      "created": "2026-09-03T12:17:35Z",
+      "last_seen": "2026-09-03T12:17:35Z"
+    },
+    {
+      "id": "L-006",
+      "key": "spec_deviation::inicialize explicitamente metadata jit efemera antes de executar kernels polyhok em aplicacoes mix compiladas",
+      "text": "Inicialize explicitamente metadata JIT efêmera antes de executar kernels PolyHok em aplicações Mix compiladas",
+      "signal": "spec_deviation",
+      "scope": "polyhok",
+      "status": "candidate",
+      "features": [
+        "ndvi-polyhok-prototype"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "lib/polyhok_sentinel_2_parallel_analysis/sentinel_2/ndvi.ex:42 (polyhok)"
+      ],
+      "created": "2026-09-03T12:17:35Z",
+      "last_seen": "2026-09-03T12:17:35Z"
     }
   ]
 }

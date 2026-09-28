@@ -20,11 +20,11 @@
 
 ## Handoff
 
-- **Feature**: ndvi-polyhok-prototype
-- **Phase / Task**: execução e verificação independente concluídas
-- **Completed**: T1-T4 e validação independente PASS (27/27 critérios, 3/3 mutações mortas)
+- **Feature**: ndvi-cuda-reference
+- **Phase / Task**: spec, contexto, design e tarefas em Draft; Execute não iniciado
+- **Completed**: planejamento com 27 requisitos mapeados para T1-T6; validadores de spec e tarefas passaram
 - **In-progress** (file:line): none
-- **Next step**: integrar ou revisar a feature, ou iniciar a próxima etapa do TCC
-- **Blockers**: none
-- **Uncommitted files**: `.notebook/poly-hok-integration.md` (alteração preexistente preservada fora da feature)
-- **Branch**: feat/implement-polyhok-ndvi-calc
+- **Next step**: revisar as escolhas propostas em `spec.md`, especialmente CUDA C++, interface CLI e medição adiada; depois iniciar T1 na máquina CUDA
+- **Blockers**: build e testes CUDA exigem Toolkit, GPU NVIDIA, PolyHok e binários preparados no ambiente de execução
+- **Uncommitted files**: `.specs/features/ndvi-cuda-reference/` e esta atualização de Handoff
+- **Branch**: main
